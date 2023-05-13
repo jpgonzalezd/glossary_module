@@ -1,0 +1,23 @@
+glossary_tooltip.glossary_tooltip_controller_listing:
+  path: 'glossary_tooltip'
+  defaults:
+    _controller: 'Drupal\glossary_tooltip\Controller\glossary_tooltipController::Listing'
+    _title: 'Glossary list'
+  requirements:
+    _permission: 'access content'
+
+glossary_tooltip.glossary_tooltip_form:
+  path: 'glossary_tooltip/form/data'
+  defaults:
+    _form: 'Drupal\glossary_tooltip\Form\glossary_tooltipForm'
+    _title: 'Add to glossary'
+  requirements:
+    _permission: 'TRUE'
+
+glossary_tooltip.delete_form:
+  path: 'glossary_tooltip/form/delete/{cid}'
+  defaults:
+    _form: 'Drupal\glossary_tooltip\Form\DeleteForm'
+    _title: 'Delete from glossary'
+  requirements:
+    _permission: 'TRUE'

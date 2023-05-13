@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for glossary_tooltip module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+function glossary_tooltip_menu()
+{
+  $item['glossary_tooltip']=array('title' => 'List Records', 'description'=>'', 'route'=>
+        'glossary_tooltip.glossary_tooltip_controller_listing');
+
+  $item['glossary_tooltip/form/data']=array('title' => 'Add / Edit Form', 'description'=>'', 'route'=>
+        'glossary_tooltip.glossary_tooltip_form');
+
+  $item['glossary_tooltip/form/delete/{cid}']=array('title' => 'Delete Records', 'description'=>'', 'route'=>
+        'glossary_tooltip.delete_form');
+
+  return $item;
+
+}
